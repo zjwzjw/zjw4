@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+/*	1280*600*/
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	img{
+		border:0;
+	}
+	h3{
+		width: 960px;
+		height: 100px;
+		background: #ccc;
+		margin: 30px auto;
+		text-align: center;
+		line-height: 100px;
+	}
+	#banner{
+		width: 960px;
+		height: 480px;/*要设置宽度，否则图片不显示*/
+		margin: 0 auto;
+		background:url(img/1.jpg) no-repeat center;
+		/*background-size: cover;*/
+		/*cover能覆盖整个容器，contain不能
+		当框小图片大时，图片会小于框，也就是所说的不能覆盖整个容器，当图片比框大时，图片会放大
+
+		不设置时也会变大*/
+	}
+	/*#banner img{
+		width: 960px;
+		
+	}*/
+	#artical{
+		width: 960px;
+		height: 300px;
+		margin: 0 auto;
+	}
+	#left{
+		width: 630px;
+		height: 300px;
+		float: left;
+		background-color: #0f0;
+		word-break: break-all;
+		display: table;
+	}
+	#right{
+		width: 300px;
+		height: 300px;
+		float: right;
+		word-break: break-all;
+		background-color: #ff0;
+		display: table;
+	}
+	p{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	footer{
+		clear: both;
+	}
+	@media screen and (max-width: 959px){
+		h3{
+			width: 100%;
+		}
+		#artical{
+			width: 100%;
+		}
+		#left{
+			width: 67%;
+
+		}
+		#right{
+			width: 30%;
+
+		}
+		#banner{
+			width: 100%;
+			background-image: url(img/2.jpg);
+			padding-top: 46.8%;
+			height: 0;
+		}
+	/*	#banner img{
+			width: 100%;
+			max-width: 100%;
+		}*/
+	}
+	@media screen and (max-width: 479px){
+		#left, #right{
+			width: 100%;
+		}
+	}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<h3>页眉</h3>
+	</header>
+	<nav>
+		<h3>导航</h3>
+	</nav>
+	<div id="banner">
+		<div id="img">
+			<!-- <img src="img/1.jpg" alt=""> -->
+		</div>
+	</div>
+	<div id="artical">
+	<div id="left">
+		<p>dfbvhfgjggnugehgjherjbdhdhrtgeerwwerttgvrtvhjybbhvgeergveryewryrtvrterrvtglixinjiushidashabiwoyaofansitalertetrtrvtfgdgjhfbhdhdfhfbhjkdfjiogihdo</p>
+	</div>
+	<div id="right">
+		<p>dfbvhfgjggnugehgjherjbdhdhrtgeerwwerttgvrtvhjybbhvgeergveryewryrtvrterrvtrtetrtrvt</p>
+	</div>
+	</div>
+	<footer>
+		<h3>页尾</h3>
+	</footer>
+
+
+
+
+	<artical/>
+</body>
+</html>
